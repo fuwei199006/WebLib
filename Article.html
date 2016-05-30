@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)http://wells.farbox.com/post/di-30pian-yi-dong-duan-xiang-ying-shi-bu-ju-ye-mian-shi-xian -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<link rel="alternate" type="application/rss+xml" title="atom 1.0" href="http://wells.farbox.com/feed">
+
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+
+<title>第30篇  移动端响应式布局页面实现 - Wells</title>
+
+<link rel="stylesheet" href="./css/blog_basic.css">
+<link href="./css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<link href="./css/style.scss" type="text/css" rel="stylesheet">
+
+  </head>
+  <body style="zoom: 1;">
+    <div id="body_wrapper">
+
+
+
+
+      <div id="header" style="background-image: url(/farbox_free_image.jpg?height=428&amp;width=1280&amp;fixed=true)" class="header">
+        <div class="header_wrapper">
+          <h1 class="title"><a href="http://wells.farbox.com/">Wells</a>
+          </h1>
+          <ul class="nav">
+            <li><a href="http://wells.farbox.com/">首页</a>
+            </li>
+            <li><a href="http://wells.farbox.com/archive">归档</a>
+            </li>
+
+
+            <li><a href="http://wells.farbox.com/feed">RSS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="main">
+
+
+<div class="detail">
+  <div class="post">
+    <div class="content">
+      <h1 class="title">第30篇  移动端响应式布局页面实现</h1>
+      <div class="post_body"><h1 id="toc_0">第30篇  移动端响应式布局页面实现</h1>
+
+<ul>
+<li><p>问题的由来<br> 在以苹果主导的手机厂商，为了手机上能够获得正好的web体验，很多浏览器都会"欺骗"浏览器返回一个较大的宽度，比如你的手机告诉浏览器的我想用1000px显示当前的网页，但是你的手机设备的尺寸远远小于这个宽度，所以浏览器只能做一个缩放，这种体验效果非常的不好。下面就说说如何实现一个响应的设计：</p>
+
+<ul>
+<li>视口<br>
+关于这个定义，你可以把视口看成一个窗口， 这个窗口决定了你看到的网页的的大小。在移动端浏览器当中，存在着两种视口，一种是可见视口（也就是我们说的设备大小），另一种是视窗视口（网页的宽度是多少）。什么是可见视口，什么又是视窗视口呢？ 举一个例子：如果我们的屏幕是320像素*480像素的大小（iPhone4），假设在浏览器中，320像素的屏幕宽度能够展示980像素宽度的内容。那么320像素的宽度就是可见视口的宽度，而能够显示的980像素的宽度就是视窗视口的宽度。</li>
+<li> 视口的约束<br>
+视口对于开发者来说并不是一个好的事情，是他让响应式做起来不是很方便，（因为在移动端1000px过于大）并不是我们想要的数值。在移动端开发前，我们应该对视口进行约束。方法就是用一个name为ViewPort的meta进行标记，具体的约束规则可以写在Content中，用逗号分开。如百度
+<code>html  
+&lt;meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"&gt;
+</code>
+，至于这里面的意思可以参考下H5的知识。</li>
+</ul></li>
+<li><p>响应式实现<br><br>响应式的实现，我觉得具体可以分成两种，1、是做成两个站点和页面，根据当前的手机的设备去做跳转;2、只有一个站点，根据屏幕的大小的自动适配</p>
+
+<ul>
+<li>页面跳转<br>
+
+<ul>
+<li>页面的跳转的原理：是利用js,根据当前的设备跳转不同的站点，如device.js</li>
+</ul></li>
+<li>流布局
+
+<ul>
+<li>流布局的定义是利用百分比来设置宽度，但这个只能出现在width,margin,padding，对于border来说却没有用。
+这种方式一般只能用于宽度的适配，对于高度来说却没有什么用。</li>
+<li>box-sizing的使用（流布局里面常用）
+对于box-sizing属性，这里要提下，在盒子模型里面，这个命令了width的属性。如果设置成border-box，此时的padding表现成一种减的行为，具体的这里就不多说了。</li>
+</ul></li>
+<li><p>媒体查询  </p>
+
+<ul>
+<li>说到媒体查询，个人觉得是一个强大的东西，原理是根据当前设备的宽度与设定的宽度对比，从而判断要不要加载当前的样式。当然这种方式使用js,也可以实现，如window.onresize=function(){}。</li>
+<li><p>实现方式：  </p>
+
+<ul>
+<li><p>在css中使用 ，下面的例子是在当前设备为屏幕设备且最小宽度为是600px加载上面的css<br>如果小于599px则使用 nav li css</p>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="nd">:600px</span><span class="o">)</span> <span class="p">{</span>
+      <span class="nt">nav</span> <span class="p">{</span>
+        <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+        <span class="k">width</span><span class="o">:</span> <span class="m">25%</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nt">section</span> <span class="p">{</span>
+        <span class="k">margin-left</span><span class="o">:</span> <span class="m">25%</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+<span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:599px</span><span class="o">)</span> <span class="p">{</span>
+      <span class="nt">nav</span> <span class="nt">li</span> <span class="p">{</span>
+        <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+</pre></div></li>
+<li><p>在html中头部使用:</p>
+<div class="codehilite"><pre><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">type</span><span class="o">=</span><span class="s">"text/css"</span> <span class="na">href</span><span class="o">=</span><span class="s">"css/iPhone6P.css"</span> <span class="na">media</span><span class="o">=</span><span class="s">"screen and (min-width: 321px)"</span> 
+</pre></div>
+
+<p>这个是一个筛选的样式处理，如果设备大于320px，则使用iPhone6P.css的样式。</p></li>
+</ul></li>
+</ul></li>
+<li><p>min-width和max-width<br>这个属性是为了对移动的最大和最小的宽度做约束，如果只使用手机，可以设定</p>
+<div class="codehilite"><pre><span class="nt">body</span><span class="p">{</span>
+<span class="k">max-width</span><span class="o">:</span><span class="m">640px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>这样，无论什么设备都不会出现拉伸变形，但是可能在pad和pc浏览时会有留白。</p></li>
+</ul></li>
+<li><p>svg使用<br><br>svg是一种矢量格式的图片，用起来方便，可以任意放大图形显示，但绝不会以牺牲图像质量为代价；可在SVG图像中保留可编辑和可搜寻的状态；平均来讲，SVG文件比JPEG和GIF格式的文件要小很多，因而下载也很快。</p>
+
+<ul>
+<li>使用方法：
+
+<ul>
+<li>当成图片使用<br>
+如果把svg变成图片使用，和使用其它的图片的方法一致<br>
+<code>html
+&lt;img src="1.svg"/&gt;
+</code><br></li>
+<li>转换成字体使用
+svg转成字体的使用是非常灵活的，可以像字体一样设置大小和颜色。具体使用网站http://iconfont.cn/进行转换，然后下载到本地项目文件里面，最后再对css进行重写。</li>
+</ul></li>
+</ul></li>
+<li><p>与设计人员对接<br><br>与设计人员对接，是项目的必须的环节，也是很重要的环节，我想要注意以下几个问题：</p>
+
+<ul>
+<li>尺寸的转换<br>
+设计人员面对设计的时候有一个设计尺寸（也就是参考哪个手机尺寸进行设计的）这个关系到以后尺寸的转换和布局。如美工如果告诉你我设计参考的比例是iphone5（宽度为320px)，但图上面标的总尺寸是640px。所以要对后面的高度和宽度都除2.</li>
+<li>单位的使用<br>
+对于单位使用，如果是宽度的话，我建议使用rem.面如果是字体和svg图标则使用em为单位。</li>
+<li>其它<br>
+尊重设计人员和其它人的劳动成果（不要喊设计人员"美工"):)</li>
+</ul></li>
+</ul></div>
+      <div class="info clearfix"><span class="date"><i class="fa fa-calendar"></i><span>2016-05-22 22:01</span></span><span class="visitors"><i class="fa fa-bookmark-o"></i><span><!--fb:f170ab39e670ac065683e8bbdb8c738b:visits-->3<!--/fb--></span></span><a href="http://wells.farbox.com/post/di-30pian-yi-dong-duan-xiang-ying-shi-bu-ju-ye-mian-shi-xian?action=show_raw" target="=" _blank""="" class="show_raw"><i class="fa fa-code"></i></a><a href="http://wells.farbox.com/post/di-30pian-yi-dong-duan-xiang-ying-shi-bu-ju-ye-mian-shi-xian?action=edit" target="=" _blank""="" class="go_editor"><i class="fa fa-edit"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="other_posts"><a href="http://wells.farbox.com/post/2016-05-23#main" class="pre"><span>&lt; 2016-05-23</span></a><a href="http://wells.farbox.com/post/di-31pian-ji-hua#main" class="next"><span>第31篇 2016计划 &gt;</span></a>
+  </div>
+<div id="fb_comments_container">
+  <link rel="stylesheet" href="./css/comment.css">
+  <ul id="fb_comments">
+  </ul>
+  <form id="fb_new_comment" method="post" action="http://wells.farbox.com/post/di-30pian-yi-dong-duan-xiang-ying-shi-bu-ju-ye-mian-shi-xian#fb_new_comment"><textarea name="content"></textarea>
+    <div class="input_body">
+      <ul>
+        <li>
+          <label>Name:</label>
+          <input type="text" name="author" value="">
+        </li>
+        <li>
+          <label>Email:</label>
+          <input type="text" name="email" value="">
+        </li>
+        <li>
+          <label>Site:</label>
+          <input type="text" name="site" value="">
+        </li>
+        <li>
+          <input id="c_submit" type="submit" value="Comment" class="c_button">
+        </li>
+      </ul>
+    </div>
+  </form>
+</div>
+
+</div>
+
+
+      </div>
+      <div id="footer">
+        <div class="powered_by"><a href="https://www.farbox.com/" target="_blank">Powered By FarBox.com</a>
+          <div class="tg"><a href="http://colachan.com/" target="_blank">ColaChan</a>&amp;
+<a href="http://www.motype.org/" target="_blank">Deepure</a>
+          </div><a href="http://wells.farbox.com/admin" class="admin">Admin</a><span>©2012-2015 Z.R.E.Y Inc.</span>
+        </div>
+      </div><script type="text/javascript" src="./css/jquery.min.js"></script><script type="text/javascript" src="./css/script.coffee"></script>
+    </div>
+  
+<audio controls="controls" style="display: none;"></audio></body><style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></html>
