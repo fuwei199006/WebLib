@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">博客园_海洋天堂</title>
+  <subtitle type="text">技术追求，为之狂热</subtitle>
+  <id>uuid:ed2411c1-d5a7-41fb-a804-47e260b2e9fa;id=5109</id>
+  <updated>2016-05-22T13:58:53Z</updated>
+  <author>
+    <name>OceanHeaven</name>
+    <uri>http://www.cnblogs.com/OceanHeaven/</uri>
+  </author>
+  <generator>feed.cnblogs.com</generator>
+  <entry>
+    <id>http://www.cnblogs.com/OceanHeaven/p/5517950.html</id>
+    <title type="text">第31篇 2016计划 - OceanHeaven</title>
+    <summary type="text">现在想做很多事情，但一直没有一个好的实施，自己也有时候会拖拉，下面列几个计划，来约束自己按时实现： 写23种设计模式文章 在2016-06-31号前完成 读完clr,并写clr的读书笔记 预计50篇 在2015-08-31号完成 读一个开源的C#的代码 30天时间 写几篇文章 其它的相关的设计模式，</summary>
+    <published>2016-05-22T13:56:00Z</published>
+    <updated>2016-05-22T13:56:00Z</updated>
+    <author>
+      <name>OceanHeaven</name>
+      <uri>http://www.cnblogs.com/OceanHeaven/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/OceanHeaven/p/5517950.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/OceanHeaven/p/5517950.html" />
+    <content type="html">【摘要】现在想做很多事情，但一直没有一个好的实施，自己也有时候会拖拉，下面列几个计划，来约束自己按时实现： 写23种设计模式文章 在2016-06-31号前完成 读完clr,并写clr的读书笔记 预计50篇 在2015-08-31号完成 读一个开源的C#的代码 30天时间 写几篇文章 其它的相关的设计模式， &lt;a href="http://www.cnblogs.com/OceanHeaven/p/5517950.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/OceanHeaven/p/5517589.html</id>
+    <title type="text">第30篇  移动端响应式布局页面实现 - OceanHeaven</title>
+    <summary type="text">问题的由来在以苹果主导的手机厂商，为了手机上能够获得正好的web体验，很多浏览器都会"欺骗"浏览器返回一个较大的宽度，比如你的手机告诉浏览器的我想用1000px显示当前的网页，但是你的手机设备的尺寸远远小于这个宽度，所以浏览器只能做一个缩放，这种体验效果非常的不好。下面就说说如何实现一个响应的设计：</summary>
+    <published>2016-05-22T11:53:00Z</published>
+    <updated>2016-05-22T11:53:00Z</updated>
+    <author>
+      <name>OceanHeaven</name>
+      <uri>http://www.cnblogs.com/OceanHeaven/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/OceanHeaven/p/5517589.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/OceanHeaven/p/5517589.html" />
+    <content type="html">【摘要】问题的由来在以苹果主导的手机厂商，为了手机上能够获得正好的web体验，很多浏览器都会"欺骗"浏览器返回一个较大的宽度，比如你的手机告诉浏览器的我想用1000px显示当前的网页，但是你的手机设备的尺寸远远小于这个宽度，所以浏览器只能做一个缩放，这种体验效果非常的不好。下面就说说如何实现一个响应的设计： &lt;a href="http://www.cnblogs.com/OceanHeaven/p/5517589.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/OceanHeaven/p/5487831.html</id>
+    <title type="text">第29篇 杂文-写给自己 - OceanHeaven</title>
+    <summary type="text">这段时间换了工作，也是在上家公司的最后一天，对于这次跳槽并没有什么太多的感觉。 前段时间还在为大公司还是小公司而纠结，现在笃定了一个公司，反而变的更轻松了。从去年开始陆续去写发文章，也有一些不小的收获，但是一旦人懒了下来，写博客的收获很快都会忘记成为历史。这也许是要改的地方。 记得开始写博客的目的是</summary>
+    <published>2016-05-12T15:19:00Z</published>
+    <updated>2016-05-12T15:19:00Z</updated>
+    <author>
+      <name>OceanHeaven</name>
+      <uri>http://www.cnblogs.com/OceanHeaven/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/OceanHeaven/p/5487831.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/OceanHeaven/p/5487831.html" />
+    <content type="html">【摘要】这段时间换了工作，也是在上家公司的最后一天，对于这次跳槽并没有什么太多的感觉。 前段时间还在为大公司还是小公司而纠结，现在笃定了一个公司，反而变的更轻松了。从去年开始陆续去写发文章，也有一些不小的收获，但是一旦人懒了下来，写博客的收获很快都会忘记成为历史。这也许是要改的地方。 记得开始写博客的目的是 &lt;a href="http://www.cnblogs.com/OceanHeaven/p/5487831.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/OceanHeaven/p/5472181.html</id>
+    <title type="text">第28篇  js中let和var - OceanHeaven</title>
+    <summary type="text">let与var 在js中声明一个变量除了一个var 还有一个let的声明。对于var 在前面的作用域中已经讲过，这次主要说下二者的区别： 在MDN上有这样的一个demo: 上面这段代码的意图是创建5个li,点击不同的li能够打印出当前li的序号。如果不用let，而改用var的话，将总是打印出 Ite</summary>
+    <published>2016-05-08T15:02:00Z</published>
+    <updated>2016-05-08T15:02:00Z</updated>
+    <author>
+      <name>OceanHeaven</name>
+      <uri>http://www.cnblogs.com/OceanHeaven/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/OceanHeaven/p/5472181.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/OceanHeaven/p/5472181.html" />
+    <content type="html">【摘要】let与var 在js中声明一个变量除了一个var 还有一个let的声明。对于var 在前面的作用域中已经讲过，这次主要说下二者的区别： 在MDN上有这样的一个demo: 上面这段代码的意图是创建5个li,点击不同的li能够打印出当前li的序号。如果不用let，而改用var的话，将总是打印出 Ite &lt;a href="http://www.cnblogs.com/OceanHeaven/p/5472181.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/OceanHeaven/p/5300337.html</id>
+    <title type="text">第27篇  重复造轮子---模拟IIS服务器 - OceanHeaven</title>
+    <summary type="text">在写程序的时候，重复造轮子是程序员的一个大忌，很多人对重复造轮子持有反对的态度，但是我觉得这个造轮子的过程，是对于现有的知识的一个深入的探索的过程，虽然我们不可能把轮子造的那么的完善，对于现在有的东西是一个更好的理解和使用。 当你打开一个网页时，你会看到一个html页面的呈现，当然这是一个完整的Ht</summary>
+    <published>2016-03-20T16:10:00Z</published>
+    <updated>2016-03-20T16:10:00Z</updated>
+    <author>
+      <name>OceanHeaven</name>
+      <uri>http://www.cnblogs.com/OceanHeaven/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/OceanHeaven/p/5300337.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/OceanHeaven/p/5300337.html" />
+    <content type="html">【摘要】在写程序的时候，重复造轮子是程序员的一个大忌，很多人对重复造轮子持有反对的态度，但是我觉得这个造轮子的过程，是对于现有的知识的一个深入的探索的过程，虽然我们不可能把轮子造的那么的完善，对于现在有的东西是一个更好的理解和使用。 当你打开一个网页时，你会看到一个html页面的呈现，当然这是一个完整的Ht &lt;a href="http://www.cnblogs.com/OceanHeaven/p/5300337.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/OceanHeaven/p/5021245.html</id>
+    <title type="text">第26篇  jQuery 快速学习下 - OceanHeaven</title>
+    <summary type="text">前面说了下jQuery了，大部分说的都是选择器和过滤器方面的东西，这个写完后，后面就说下剩下的东西了，离目标越来越近了。下面就说说这些东西事件传统比较 在js中说了原生js的绑定事件，基本的形式如下： dom.addEventListener('click', function() { ...</summary>
+    <published>2015-12-05T03:27:00Z</published>
+    <updated>2015-12-05T03:27:00Z</updated>
+    <author>
+      <name>OceanHeaven</name>
+      <uri>http://www.cnblogs.com/OceanHeaven/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/OceanHeaven/p/5021245.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/OceanHeaven/p/5021245.html" />
+    <content type="html">【摘要】前面说了下jQuery了，大部分说的都是选择器和过滤器方面的东西，这个写完后，后面就说下剩下的东西了，离目标越来越近了。下面就说说这些东西事件传统比较 在js中说了原生js的绑定事件，基本的形式如下： dom.addEventListener('click', function() { ... &lt;a href="http://www.cnblogs.com/OceanHeaven/p/5021245.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/OceanHeaven/p/5003375.html</id>
+    <title type="text">第25篇 jQuer快速学习（上）---选择器和DOM操作 - OceanHeaven</title>
+    <summary type="text">这个文章经历的时间比较长，不是因为jQuery比较难，而是东西比较多，真心是个体力活。所以本来想把jQuery做成一篇去写，但由于写的时候发现jQuery发现写成一篇的话过于长，对于阅读起来也不是一个好事，所以拆成两篇，这篇文章只说说选择器，筛选器和dom的操作，有基础的人可以把这个一篇略去不看.....</summary>
+    <published>2015-11-28T14:13:00Z</published>
+    <updated>2015-11-28T14:13:00Z</updated>
+    <author>
+      <name>OceanHeaven</name>
+      <uri>http://www.cnblogs.com/OceanHeaven/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/OceanHeaven/p/5003375.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/OceanHeaven/p/5003375.html" />
+    <content type="html">【摘要】这个文章经历的时间比较长，不是因为jQuery比较难，而是东西比较多，真心是个体力活。所以本来想把jQuery做成一篇去写，但由于写的时候发现jQuery发现写成一篇的话过于长，对于阅读起来也不是一个好事，所以拆成两篇，这篇文章只说说选择器，筛选器和dom的操作，有基础的人可以把这个一篇略去不看..... &lt;a href="http://www.cnblogs.com/OceanHeaven/p/5003375.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/OceanHeaven/p/4988062.html</id>
+    <title type="text">博文目录 2016.05.13 - OceanHeaven</title>
+    <summary type="text">第31篇 2016计划（2016-05-22 21:56） 第30篇 移动端响应式布局页面实现（2016-05-22 19:53） 第29篇 杂文-写给自己（2016-05-12 23:19） 第28篇 js中let和var（2016-05-08 23:02） 第27篇 重复造轮子 模拟IIS服务器</summary>
+    <published>2015-11-23T04:50:00Z</published>
+    <updated>2015-11-23T04:50:00Z</updated>
+    <author>
+      <name>OceanHeaven</name>
+      <uri>http://www.cnblogs.com/OceanHeaven/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/OceanHeaven/p/4988062.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/OceanHeaven/p/4988062.html" />
+    <content type="html">【摘要】第31篇 2016计划（2016-05-22 21:56） 第30篇 移动端响应式布局页面实现（2016-05-22 19:53） 第29篇 杂文-写给自己（2016-05-12 23:19） 第28篇 js中let和var（2016-05-08 23:02） 第27篇 重复造轮子 模拟IIS服务器 &lt;a href="http://www.cnblogs.com/OceanHeaven/p/4988062.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/OceanHeaven/p/4984313.html</id>
+    <title type="text">第24篇 js小知识和“坑” - OceanHeaven</title>
+    <summary type="text">前面说了说了js的相关知识，基本上除了语法外，把项目常用的知识做了一个梳理，现在说下js的其它方面的知识，这些知识不成体系，属于不理解对于一般开发没什么太多影响，但如果理解清楚，可以更好去开发。js解析引擎:引擎的定义:什么是js解析引擎？简单的说是就能够读懂javascript代码的的平台，如.....</summary>
+    <published>2015-11-21T10:15:00Z</published>
+    <updated>2015-11-21T10:15:00Z</updated>
+    <author>
+      <name>OceanHeaven</name>
+      <uri>http://www.cnblogs.com/OceanHeaven/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/OceanHeaven/p/4984313.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/OceanHeaven/p/4984313.html" />
+    <content type="html">【摘要】前面说了说了js的相关知识，基本上除了语法外，把项目常用的知识做了一个梳理，现在说下js的其它方面的知识，这些知识不成体系，属于不理解对于一般开发没什么太多影响，但如果理解清楚，可以更好去开发。js解析引擎:引擎的定义:什么是js解析引擎？简单的说是就能够读懂javascript代码的的平台，如..... &lt;a href="http://www.cnblogs.com/OceanHeaven/p/4984313.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/OceanHeaven/p/4979413.html</id>
+    <title type="text">第23篇 js快速学习知识 - OceanHeaven</title>
+    <summary type="text">前面说了js的一些高级方面的基础知识，这些都是比较容易出错的和比较难理解的东西，除了这些之外其它的知识都比较简单了，基础学好了，扩展起来就是小意思。今天说说js方面可以快速学习和入门的知识。1、闭包对于闭包来说，很多人对它有误解，有的说的怎么怎么好，但是我觉得这个东西说的那么悬无非是忽悠人的，...</summary>
+    <published>2015-11-19T15:10:00Z</published>
+    <updated>2015-11-19T15:10:00Z</updated>
+    <author>
+      <name>OceanHeaven</name>
+      <uri>http://www.cnblogs.com/OceanHeaven/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/OceanHeaven/p/4979413.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/OceanHeaven/p/4979413.html" />
+    <content type="html">【摘要】前面说了js的一些高级方面的基础知识，这些都是比较容易出错的和比较难理解的东西，除了这些之外其它的知识都比较简单了，基础学好了，扩展起来就是小意思。今天说说js方面可以快速学习和入门的知识。1、闭包对于闭包来说，很多人对它有误解，有的说的怎么怎么好，但是我觉得这个东西说的那么悬无非是忽悠人的，... &lt;a href="http://www.cnblogs.com/OceanHeaven/p/4979413.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+</feed>
