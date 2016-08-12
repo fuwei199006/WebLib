@@ -1,0 +1,89 @@
+/*Reset Css*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;outline:none;}
+input.hidefocus::-moz-focus-inner {border:none;}
+table{border-collapse:collapse;border-spacing:0;empty-cells:show;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup,b{font-style:inherit;font-weight:inherit;}
+del,ins{text-decoration:none;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}
+legend{color:#5A5A5A;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{font-size:100%;}
+i,em{font-style:normal}
+small{font-size:12px;display: block;}
+body{ color:#222;font: 14px/1.5 tahoma,arial,"Microsoft YaHei"; background:#fff;}
+a{ color:#222; text-decoration:none}
+a:hover{ color:#379be9; text-decoration:underline}
+.clear{clear: both;}
+.f_left{float: left;}
+.f_right{float: right;}
+.f_center{text-align: center;}
+.f_bold{font: bold;}
+/**end**/
+
+header {
+	top: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #f8f8f8;
+	border-bottom: 1px solid #eee;
+	text-align:center;
+}
+
+.wrap {
+	width: 70%;
+	margin: 0 auto;
+	height: 40px;
+	line-height: 40px;
+}
+.nav ul{
+
+	
+}
+.nav li {
+	list-style-type: none;
+	float: left;
+	padding-left: 1px;
+	border-left: 1px solid #ddd;
+	text-align: center;
+	width: 80px;
+}
+
+.navgb {
+	background-color: #379be9;
+	margin-top: 10px;
+}
+
+.navgb li,
+.navgb a {
+	list-style-type: none;
+	float: left;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-align: center;
+	width: 80px;
+}
+
+.navgb .select {
+	background: #2986cf;
+}
+
+.navgb li:hover {
+	background: #2986cf;
+}
+
+.navgb li:selection {
+	background: #2986cf;
+}
+
+.breadnav{
+	margin-top: 10px;
+	background: #eee;
+}
