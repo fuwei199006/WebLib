@@ -38,7 +38,7 @@ header {
 }
 
 .wrap {
-	width: 70%;
+	width: 1100px;
 	margin: 0 auto;
 	height: 40px;
 	line-height: 40px;
@@ -87,3 +87,105 @@ header {
 	margin-top: 10px;
 	background: #eee;
 }
+.content{
+	margin-top: 5px;
+}
+.lfluent {
+	float: left;
+	width: 390px;
+}
+
+.mfluent {
+	float: left;
+	margin-left: 30px;
+	width: 335px;
+}
+
+.rfluent {
+	float: left;
+	margin-left: 30px;
+	width: 310px;
+}
+
+.hotList {
+	width: 100%;
+}
+
+.hotTitle dl {
+	font-size: 20px;
+	font-weight: bold;
+	overflow: hidden;
+	display: block;
+	border-bottom: 1px dashed #d5d5d5;
+}
+
+.hotTitle dd {
+	font-size: 15px;
+	color: #999;
+}
+
+.titleList li {
+	width: 330px;
+	overflow: hidden;
+	margin-top: 10px;
+	height: 29px;
+	line-height: 29px;
+}
+
+.module {
+	background-color: #FFFFFF;
+	height: 350px;
+}
+
+.m_title {
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #eee;
+	background: #f8f8f8;
+}
+.m_title h1,.hotList h1{
+	color: #379be9;
+	font-size: 16px;
+	text-indent: 10px;
+}
+.m_title a{
+	color: #606060;
+	font-size: 13px;
+}
+.m_box{
+	padding: 10px;
+    border: 1px solid #eee; 
+    height: 290px;
+  
+}
+ .box_item {
+ 	width: 45%;
+ 	margin: 5px 5px 10px 5px;
+ 	height: 130px;
+ }
+ 
+ .box_item img {
+ 	width: 100%;
+ 	display: block;
+ }
+ 
+ .box_item div {
+ 	text-align: center;
+ 	background-color: #eee;
+ }
+ .mainList {
+ 	border: 1px solid black;
+ 	height: 100px;
+ }
+ 
+ .mainLeft {
+ 	border: 1px solid black;
+ 	width: 750px;
+ 	height: 100px;
+ }
+ 
+ .mainRight {
+ 	border: 1px solid black;
+ 	width: 313px;
+ 	height: 100px;
+ }
