@@ -35,13 +35,14 @@ header {
 	background-color: #f8f8f8;
 	border-bottom: 1px solid #eee;
 	text-align:center;
+	
 }
 
 .wrap {
 	width: 1100px;
 	margin: 0 auto;
 	height: 40px;
-	line-height: 40px;
+	
 }
 .nav ul{
 
@@ -58,6 +59,7 @@ header {
 
 .navgb {
 	background-color: #379be9;
+	line-height: 40px;
 	
 }
 
@@ -86,6 +88,7 @@ header {
 .breadnav{
 
 	background: #eee;
+	line-height: 40px;
 }
 .content{
 	margin-top: 5px;
@@ -99,12 +102,13 @@ header {
 	float: left;
 	margin-left: 30px;
 	width: 335px;
+	line-height: 35px;
 }
 
 .rfluent {
 	float: left;
 	margin-left: 30px;
-	width: 310px;
+	width: 313px;
 }
 
 .hotList {
@@ -129,7 +133,7 @@ header {
 	overflow: hidden;
 	margin-top: 10px;
 	height: 29px;
-	line-height: 29px;
+
 }
 
 .module {
@@ -176,22 +180,22 @@ header {
  }
  .mainList {
  	margin-top: 5px;
- 	height: 100px;
+ 	 
  }
  
  .mainLeft {
  	border-top: 1px solid #379be9 ;
  	width: 750px;
- 	height: 100px;
+ 
  }
  .itemLeft {
  	width: 360px;
- 	border-bottom: 1px dashed #E5E5E5;
+ 	
  }
  
  .mainRight {
- 	width: 313px;
- 	height: 100px;
+ 	width: 315px;
+ 	 
  }
  
  .itemLeft dt a {
@@ -209,10 +213,51 @@ header {
  	height: 45px;
  	margin-top: 6px;
  	color: #222;
- 	line-height: 25px;
+  
  }
- .newsList 
  
+ .newsList {
+ 	line-height: 30px;
+ }
+
+ .m_newList li {
+ 	margin-left: 1px;
+ 	overflow: hidden;
+ 	
+ 	height: 30px;
+ }
+  .m_newList li a{
+  	overflow: hidden;
+  	text-decoration: none;
+  	height: 26px;
+    line-height: 26px;
+  }
+ .m_newList .em1 {
+ 	color: red;
+ 	font-weight: bold;
+ 	font-size: 16px;
+ }
+ 
+ .m_newList .em2 {
+ 	color: #f6204d;
+ 	font-weight: bold;
+ 	font-size: 16px;
+ }
+ 
+ .m_newList .em3 {
+ 	color: #f65220;
+ 	font-weight: bold;
+ 	font-size: 16px;
+ }
+ 
+ .m_newList li em {
+    display: inline-block;
+    text-align: center;
+    padding-right: 10px;
+    font-style: italic;
+    font-size: 14px;
+    color: #999;
+}
  .debug {
  	border: 1px solid black;
  	height: 100px;
