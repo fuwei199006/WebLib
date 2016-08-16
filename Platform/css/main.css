@@ -114,7 +114,7 @@ header {
 .hotList {
 	width: 100%;
 }
-
+ 
 .hotTitle dl {
 	font-size: 20px;
 	font-weight: bold;
@@ -133,7 +133,11 @@ header {
 	overflow: hidden;
 	margin-top: 10px;
 	height: 29px;
+	background: transparent url(../img/list_style.png) no-repeat scroll 2px 18px;
 
+}
+.titleList a{
+	margin-left: 10px;
 }
 
 .module {
@@ -149,8 +153,14 @@ header {
 }
 .m_title h1,.hotList h1{
 	color: #379be9;
-	font-size: 16px;
+	 
 	text-indent: 10px;
+}
+.hotList h1{
+	color: #379be9;
+	font-size: 18px;
+	text-indent: 10px;
+	margin: 5px -2px;
 }
 .m_title a{
 	color: #606060;
@@ -183,21 +193,27 @@ header {
  	 
  }
  
- .mainLeft {
- 	border-top: 1px solid #379be9 ;
- 	width: 750px;
- 
+
+ .mainRightItem{
+ 	margin-bottom: 5px;
  }
- .itemLeft {
- 	width: 360px;
- 	
+ .contentBlock{
+ 		border-top: 1px solid #379be9 ;
+ 		width: 750px;
  }
+
  
  .mainRight {
  	width: 315px;
- 	 
+
  }
+  .itemRight {
  
+ 	width: 300px;
+ 	overflow: hidden;
+ 	 
+ 	
+ }
  .itemLeft dt a {
  	width: 100px;
  	height: 70px;
@@ -218,8 +234,14 @@ header {
  
  .newsList {
  	line-height: 30px;
+ 	
  }
-
+ .newsList  a{
+ 	margin-left: 1px;
+ 	overflow: hidden;
+ 	color: #666666;
+    text-decoration: none;
+ }
  .m_newList li {
  	margin-left: 1px;
  	overflow: hidden;
@@ -228,9 +250,10 @@ header {
  }
   .m_newList li a{
   	overflow: hidden;
-  	text-decoration: none;
+
   	height: 26px;
     line-height: 26px;
+    
   }
  .m_newList .em1 {
  	color: red;
@@ -258,7 +281,64 @@ header {
     font-size: 14px;
     color: #999;
 }
- .debug {
- 	border: 1px solid black;
- 	height: 100px;
- }
+.picmsg li{
+	height: 90px;
+	width: 290px;
+	 
+}
+.picleft{
+	width: 95px;
+	display: inline;
+	float: left;
+}
+.picInfo{
+	overflow: hidden;
+	width: 170px;
+	line-height: 50px;
+	height: 50px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.scPage li {
+	border-bottom: 1px dotted #d5d5d5;
+	padding-bottom: 10px;
+	font-size: 15px;
+	position: relative;
+	margin-bottom: 5px;
+	line-height: 28px;
+}
+
+.scPage li span {
+	font-size: 12px;
+	display: block;
+	color: #666;
+	position: absolute;
+	top: 40px;
+	left: 200px;
+}
+
+.scPage li span em {
+	text-align: center;
+	background: #379be9;
+	color: #fff;
+	width: 50px;
+	height: 20px;
+	overflow: hidden;
+	display: block;
+	float: right;
+	line-height: 20px;
+}
+.w_Content{
+	border-top: 1px solid #379be9 ;
+	margin: 2px auto ;
+	width: 1100px;
+}
+.quickGet{
+	width: 100%;
+	height: 300px;
+	background-color:#f8f8f8 ;
+}
+.debug {
+	border: 1px solid black;
+}
