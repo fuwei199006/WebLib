@@ -349,13 +349,90 @@ header {
 }
 .quickList li{
 	float: left;
-	width: 80px;
+	width: 90px;
 	margin-left:20px;
 	
 }
 .quickGet .item{
-	margin-top: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	height: 20px;
+}
+.limitHeight{
+	height: 150px;
+	 
+}
+ 
+.tab li{
+	float: left;
+ 
+	padding: 5px;
+	height: 20px;
+	border-left: 1px solid #EEEEEE;
+	
+}
+.tab li.active{
+	background-color: #379be9;
+	color: #FFFFFF;
+}
+.panel {
+	padding: 10px;
+	border-top: 1px solid #eee;
+}
+
+.panel a {
+	display: block;
+	float: left;
+	padding: 0 15px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 10px;
+	color: #666;
+}
+
+.footer {
+	height: 200px;
+	background: #f1f1f1;
+	position: relative;
+	z-index: 30;
+	margin-top:5px;
+	
+}
+.footeritem{
+	width: 22%;
+	margin: 0 auto;
+	text-align: center;
+	height: 150px;
+	padding-top:15px;
+}
+.footeritem img{
+	height: 120px;
+	width: 120px;
+	
+}
+.footeritem span{
+	display: block;
+	font-weight: bold;
+	font-size: 16px;
+	
+}
+.info em {
+	font-weight: bold;
+}
+.info div{
+	margin:auto 0;
+	margin-top: 2px;
+}
+.info {
+
+	padding: 25px 5px;
+ 
+}
+.center{
+	width: 1100px;
+	margin: 0 auto;
+	padding: 10px;
+	
 }
 .debug {
 	border: 1px solid black;
