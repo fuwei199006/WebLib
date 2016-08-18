@@ -468,10 +468,138 @@ header {
 	border-top: 1px solid #379be9;
  
 }
+
 .extentionBox li{
-	float: left;
+ 
 	margin-top: 10px;
+	margin-left: 30px;
+	
+ 
 }
-.debug {
-	border: 1px solid black;
+.picinfoBox {
+	
 }
+
+.picinfoTilte {
+	background: url(../img/recombg.png);
+	height: 35px;
+	line-height: 35px;
+
+	padding: 0 10px;
+	color: #1e50a2;
+	border: 1px solid #c8d8f2;
+	
+}
+.picinfoContent{
+	height: 150px;
+	border: 1px solid #c8d8f2;
+	border-top: none;
+		padding: 20px 40px;
+		
+}
+.picinfoContent li{
+	float: left;
+	width: 18%;
+	margin-left: 20px;
+ 
+
+ 
+	
+}
+ 
+.picinfoContent li a {
+	 text-align: center;
+     width: 130px;
+     display: block;
+     padding: 0 10px;
+     font-weight: bold;
+	
+}
+.picinfoContent img {
+	display: block;
+	width: 135px;
+	height: 120px;
+}
+.page li {
+ 
+	float: left;
+	margin: 0;
+	width: 20px;
+	text-align: center;
+	height: 30px;
+	line-height: 35px; 
+     
+	 
+}
+ .page li.active a {
+ 	background: #bfbfbf;
+ 	width: 20px;
+ 	padding: 3px;
+ 	 
+ }
+ 
+ .commit {
+ 	border: 1px solid #4398ed;
+ 	height: 100px;
+ 	text-align: center;
+ 	padding: 5px;
+ 	border-radius: 10px;
+ 
+ }
+ 
+ .login {
+ 	padding: 5px;
+ 	margin-right: 10px;
+ 	border: 1px solid #4398ed;
+ 	border-radius: 50px;
+ 	width: 30px;
+ 	height: 30px;
+ 	line-height: 30px;
+ 	margin-bottom: 2px;
+ 	text-align: center;
+ }
+ .commit textarea {
+ 	border: none;
+ 	resize: none;
+ 	width: 98%;
+ 	padding: 10px;
+ 	height: 75px;
+ }
+ 
+ .commitBox .btnSubmit {
+ 	padding: 5px;
+ 	margin: 10px;
+ 	width: 80px;
+ 	border: none;
+ 	border-radius: 2px;
+ 	height: 30px;
+ 	background-color: #379be9;
+ 	color: #FFFFFF;
+ }
+ 
+ .btnSubmit:hover {
+ 	background-color: #1392eb;
+ }
+ 
+ .noneDiscuss {
+ 	text-align: center;
+ 	background: #EEEEEE;
+ 	border-radius: 2px;
+ 	height: 10px;
+ 	color: #666666;
+ 	font-size: 13px;
+ }
+ .discussNav {
+ 	width: 100%;
+ }
+ 
+  .discussNav li{
+   	border : 1px solid black;
+ 	width: 50px;
+ 	text-align: center;
+ 	 border-bottom : none;
+ 	 border-radius: 2px;
+  }
+ .debug {
+ 	border: 1px solid black;
+ }
