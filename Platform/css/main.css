@@ -160,7 +160,7 @@ header {
 	 
 	text-indent: 10px;
 }
-.hotList h1,.quickGet h1{
+.hotList h1,.quickGet h1,.extentionBox h1{
 	color: #379be9;
 	font-size: 18px;
 	text-indent: 10px;
@@ -438,8 +438,39 @@ header {
 	padding: 10px;
 	
 }
-.article{
+.article h1{
+	color: #c30;
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+    padding: 12px 0 6px;
+    text-align: center;
 	
+}
+.source,.source a{
+	text-align: center;
+	color: #666666;
+	position: relative;
+}
+.source{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+.articleContent p {
+	font-size: 16px;
+	line-height: 30px;
+	padding-bottom: 17px;
+	word-wrap: break-word;
+	word-break: normal;
+}
+.extentionBox{
+	border-top: 1px solid #379be9;
+ 
+}
+.extentionBox li{
+	float: left;
+	margin-top: 10px;
 }
 .debug {
 	border: 1px solid black;
