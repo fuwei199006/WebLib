@@ -138,6 +138,7 @@
 			</div>
 		</div>
 		<div class="extentionBox center">
+		<div class="f_left">
 			<h1>相关推荐</h1>
 			<ul>
 				<li>1、曾站在风口上的汽车电商已经逐渐走入困境之中</li>
@@ -148,23 +149,47 @@
 				<li>6、曾站在风口上的汽车电商已经逐渐走入困境之中</li>
 
 			</ul>
+</div>
+    <div class="f_left">
+			<h1>热点推荐</h1>
+			<ul>
+				<li>1、曾站在风口上的汽车电商已经逐渐走入困境之中</li>
+				<li>2、曾站在风口上的汽车电商已经逐渐走入困境之中</li>
+				<li>3、曾站在风口上的汽车电商已经逐渐走入困境之中</li>
+				<li>4、曾站在风口上的汽车电商已经逐渐走入困境之中</li>
+				<li>5、曾站在风口上的汽车电商已经逐渐走入困境之中</li>
+				<li>6、曾站在风口上的汽车电商已经逐渐走入困境之中</li>
 
+			</ul>
+        </div>
+        <div class="f_left">
+			<h1>其它推荐</h1>
+			<ul>
+				<li>1、曾站在风口上的汽车电商已经逐渐走入困境之中</li>
+				<li>2、曾站在风口上的汽车电商已经逐渐走入困境之中</li>
+				<li>3、曾站在风口上的汽车电商已经逐渐走入困境之中</li>
+				<li>4、曾站在风口上的汽车电商已经逐渐走入困境之中</li>
+				<li>5、曾站在风口上的汽车电商已经逐渐走入困境之中</li>
+				<li>6、曾站在风口上的汽车电商已经逐渐走入困境之中</li>
+
+			</ul>
+        </div>
 		</div>
-		<div class="center picinfoBox">
+		<div class="center picinfoBox clear">
 			<div class="picinfoTilte">热点文章
 				<div class="page f_right">
-					<ul>
+					<ul id="page">
 						<li class="active">
-							<a href="#">1</a>
+							<a href="javascript:void(0)">1</a>
 						</li>
 						<li>
-							<a href="#">2</a>
+							<a href="javascript:void(0)">2</a>
 						</li>
 						<li>
-							<a href="#">3</a>
+							<a href="javascript:void(0)">3</a>
 						</li>
 						<li>
-							<a href="#">4</a>
+							<a href="javascript:void(0)">4</a>
 						</li>
 					</ul>
 				</div>
@@ -322,3 +347,14 @@
 	</body>
 
 </html>
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$(function(){
+	$("#page li").click(function(){
+	       $(this).addClass("active").siblings().removeClass("active");
+	       
+	      
+	});
+});
+</script>

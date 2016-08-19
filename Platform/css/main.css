@@ -19,7 +19,8 @@ i,em{font-style:normal}
 small{font-size:12px;display: block;}
 body{ color:#222;font: 14px/1.5 tahoma,arial,"Microsoft YaHei"; background:#fff;}
 a{ color:#222; text-decoration:none}
-a:hover{ color:#379be9; text-decoration:underline}
+a:hover{ color:#379be9; text-decoration:none}
+a:visited{color: #BFBFBF;}
 .clear{clear: both;}
 .f_left{float: left;}
 .f_right{float: right;}
@@ -131,7 +132,7 @@ header {
 	font-size: 15px;
 	color: #999;
 }
-
+ 
 .titleList li {
 	width: 330px;
 	overflow: hidden;
@@ -142,6 +143,7 @@ header {
 }
 .titleList a{
 	margin-left: 10px;
+ 
 }
 
 .module {
@@ -240,11 +242,13 @@ header {
  	line-height: 30px;
  	
  }
- .newsList  a{
+ .newsList a {
  	margin-left: 1px;
  	overflow: hidden;
  	color: #666666;
-    text-decoration: none;
+ 	text-decoration: none;
+ 	padding-left: 8px;
+ 	background: transparent url(../img/list_style.png) no-repeat scroll 0px 7px;
  }
  .m_newList li {
  	margin-left: 1px;
@@ -347,6 +351,10 @@ header {
 	margin-left: 30px;
 	font-size: 15px;
 	font-weight: bold;
+}
+
+.quickGet li {
+	cursor: pointer;
 }
 .quickList{
 	    border-bottom: 1px dotted #d5d5d5;
@@ -656,6 +664,7 @@ header {
  
  .discussOperate a {
  	color: #BFBFBF;
+ 	margin-left: 5px;
  }
  
  .discussOperate a:hover {

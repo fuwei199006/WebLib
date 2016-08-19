@@ -81,14 +81,14 @@
 					</h1>
 					<div class="hotTitle">
 						<dl class="clear">
-							<dt>支付宝改版的原因</dt>
+							<dt><a href="#">支付宝改版的原因</a></dt>
 
-							<dd>这个方面可以咨询这里....</dd>
+							<dd><a href="#">这个方面可以咨询这里....</a></dd>
 						</dl>
 						<dl class="clear">
-							<dt>支付宝改版的原因支付宝改版的原因</dt>
+							<dt><a href="#">支付宝改版的原因支付宝改版的原因</a></dt>
 
-							<dd>这个方面可以咨询这里....</dd>
+							<dd><a href="#">这个方面可以咨询这里....</a></dd>
 						</dl>
 					</div>
 				</div>
@@ -795,13 +795,13 @@
 		</div>
 		<div class="  w_Content ">
 			<div class="quickGet limitHeight  tab">
-				<ul>
-					<li class="active">友情链接</li>
-					<li>关于我们</li>
+				<ul id="footerNav">
+					<li class="active"> 友情链接 </li>
+					<li> 关于我们 </li>
 
 				</ul>
 				<div class="clear"></div>
-				<div class="panel">
+				<div id="tab1" class="panel">
 					<a href="javascript:void(0)">友情链接</a>
 					<a href="javascript:void(0)">友情链接</a>
 					<a href="javascript:void(0)">友情链接</a>
@@ -809,6 +809,38 @@
 					<a href="javascript:void(0)">友情链接</a>
 					<a href="javascript:void(0)">友情链接</a>
 					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+					<a href="javascript:void(0)">友情链接</a>
+				</div>
+				<div id="tab2" style="display: none;" class="panel">
+					<a href="javascript:void(0)">友情链接2</a>
+					<a href="javascript:void(0)">友情链接2</a>
+					<a href="javascript:void(0)">友情链接2</a>
+					<a href="javascript:void(0)">友情链接2</a>
+					<a href="javascript:void(0)">友情链接2</a>
+					<a href="javascript:void(0)">友情链接2</a>
+					<a href="javascript:void(0)">友情链接2</a>
 					<a href="javascript:void(0)">友情链接</a>
 					<a href="javascript:void(0)">友情链接</a>
 					<a href="javascript:void(0)">友情链接</a>
@@ -865,3 +897,21 @@
 	</body>
 
 </html>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$(function(){
+	$("#footerNav li").click(function(){
+	       $(this).addClass("active").siblings().removeClass("active");
+	       var index=$(this).index();
+	      
+	       if(index===0){
+	      	  $("#tab"+(index+1)).show();
+	      	  $("#tab"+(index+2)).hide();
+	       }else {
+	         $("#tab"+(index)).hide();
+	      	  $("#tab"+(index+1)).show();
+	       }
+	      
+	});
+});
+</script>
