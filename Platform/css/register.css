@@ -1,0 +1,14 @@
+.registerBox{
+	
+ 
+	width: 40%;
+	background: #FFFFFF;
+	height: 500px;
+	border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+	 
+}
+.bg{
+	background: #F9F9F9;
+	height: 100%;
+}
