@@ -1,14 +1,72 @@
-.registerBox{
+.registerBox {
+	width: 60%;
+	height: 500px;
+	text-indent: 15%;
+}
+
+.r_tab   {
+	display: block;
+	border: 1px solid #e5e5e5;
+    border-bottom: none;
+	position: relative;
+	width: 100px;
+	text-align: center;
 	
- 
-	width: 40%;
+}
+
+ .r_tab li {
+	background: #FFFFFF;
+	height: 20px;
+	line-height: 20px;
+	padding: 10px;
+	border-bottom: none;
+}
+
+.register {
 	background: #FFFFFF;
 	height: 500px;
-	border-top: 1px solid #e5e5e5;
-    border-left: 1px solid #e5e5e5;
-	 
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	padding: 46px 0 30px 48px;
+	min-height: 246px;
 }
-.bg{
+.itemContent{
+	margin-top: 25px;
+}
+.itemWrap input{
+	height: 30px;
+	width: 300px;
+	border: 1px solid #eee;
+	padding: 2px;
+	border-radius: 2px;
+}
+.itemWrap .errorMsg{
+	color: red;
+}
+.valide{
+	width: 200px!important;
+}
+.valideCode{
+	color: blue;
+	height: 10px;
+	margin-left: 5px;
+	padding: 10px;
+	background: #EEEEEE;
+}
+.userContact{
+	margin-top: 25px;
+	text-indent: 30%;
+	padding: 5px;
+}
+.userContact input{
+	 margin-right: 5px;
+} 
+
+.submit{
+	height: 30px;
+	width: 80px;
+}
+.bg {
 	background: #F9F9F9;
 	height: 100%;
 }
