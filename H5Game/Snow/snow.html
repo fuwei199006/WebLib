@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+    body {
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+    .all_bg {
+        width: 1000px;
+        height: 700px;
+        position: relative;
+        /*margin: 0px;*/
+        text-align: center;
+        margin-left: 150px;
+    }
+    
+    #allcanvas {
+        text-align: center;
+    }
+    
+    #background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    #float {
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="all_bg">
+        <div id="allcanvas">
+           
+            <canvas id="background" height=800 width=1000></canvas>
+             <canvas id="float" height=800 width=1000></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/commonFunctions.js"></script>
+<script src="js/snow.js"></script>
+<script src="js/main.js"></script>
