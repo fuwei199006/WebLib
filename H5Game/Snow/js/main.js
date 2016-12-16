@@ -2,7 +2,7 @@
  * @Author: fuwei16
  * @Date:   2016-12-15 10:09:36
  * @Last Modified by:   fuwei16
- * @Last Modified time: 2016-12-15 16:56:14
+ * @Last Modified time: 2016-12-16 14:40:11
  */
 
 'use strict';
@@ -16,6 +16,7 @@ var deltaTime;
 var lastTime;
 var bgPic = new Image();
 var snow;
+var lamp;
 document.body.onload = game;
 
 function game() {
@@ -51,6 +52,9 @@ function init() {
     snow=new snowObj();
     snow.init();
 
+    lamp=new lampObj();
+    lamp.init();
+
 
 }
 
@@ -64,6 +68,7 @@ function gameloop() {
     drawBackground();
     ctx2.clearRect(0, 0, canWidth, canHeight);
     snow.draw();
+    lamp.draw();
 
 }
 
