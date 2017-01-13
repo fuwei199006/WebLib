@@ -2,7 +2,7 @@
  * @Author: fuwei16
  * @Date:   2016-12-16 14:23:48
  * @Last Modified by:   fuwei16
- * @Last Modified time: 2016-12-16 16:51:59
+ * @Last Modified time: 2016-12-20 16:15:16
  */
 
 'use strict';
@@ -41,15 +41,5 @@ lampObj.prototype.init = function() {
 }
 
 lampObj.prototype.draw = function() {
-    // for (var i = 0; i < this.num; i++) {
-    //     var grd = ctx2.createRadialGradient(this.x[i], this.y[i], 5, this.x[i], this.y[i], 10);
-    //     grd.addColorStop(0, "#FF0000");
-    //     grd.addColorStop(1, "#00FF00");
-    //     ctx2.fillStyle = grd;
-    //     ctx2.beginPath();
-    //     ctx2.arc(this.x[i], this.y[i],10,0, Math.PI * 2, true);
-    //     ctx2.stroke();
-    //     ctx2.fill();
-
-    // }
+    
 }
